@@ -12,3 +12,6 @@ outputs/
 .ruff_cache/
 build/
 dist/
+
+# generated analysis outputs (do not commit)
+analysis/results/
