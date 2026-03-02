@@ -16,9 +16,12 @@ def split_paragraphs(s: str) -> list[str]:
 
 def main() -> None:
     root = Path(__file__).resolve().parents[2]
-    text_path = root / "data" / "canonical" / "love_of_life.txt"
+    text_path = root / "data" / "canonical" / "yellow_wallpaper.txt"
     if not text_path.exists():
-        raise SystemExit("Missing canonical text. Run: python tools/update_canonical.py --tag v0.1.0")
+        raise SystemExit(
+            "Missing canonical text. Run: "
+            "python tools/update_canonical.py --tag v0.1.0 --work yellow_wallpaper"
+        )
 
     text = text_path.read_text(encoding="utf-8")
     words = tokenize_words(text)
@@ -26,6 +29,7 @@ def main() -> None:
     para_word_counts = [len(tokenize_words(p)) for p in paras]
 
     summary = {
+        "work": "yellow_wallpaper",
         "word_count": len(words),
         "paragraph_count": len(paras),
         "paragraph_word_count": {
@@ -52,8 +56,8 @@ def main() -> None:
         f"- mean: {summary['paragraph_word_count']['mean']:.2f}",
         f"- median: {summary['paragraph_word_count']['median']:.2f}",
         "",
-        "## Genre + context (stub)",
-        "TODO: naturalism, Klondike narrative context, publication history.",
+        "## Notes (stub)",
+        "TODO: publication context, reception, and constraint vocabulary (no spoilers up front).",
         "",
     ]
     (out_dir / "analysis.md").write_text("\n".join(md), encoding="utf-8")

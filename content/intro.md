@@ -1,5 +1,4 @@
 # Introduction (Draft)
 
-Editor: Nicholas Elliott Karlson
+TODO: short, story-forward overview (no spoilers up front).
 
-TODO: NEKpress intro. Explain editorial goals, historical context, and reading guidance.

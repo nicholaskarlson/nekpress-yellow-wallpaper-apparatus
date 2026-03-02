@@ -1,5 +1,4 @@
 # Historical Footnotes (Draft)
 
-Editor: Nicholas Elliott Karlson
+TODO: short factual footnotes (medicine, domestic life, publication context).
 
-TODO: Klondike era context, naturalism, publication context, etc.

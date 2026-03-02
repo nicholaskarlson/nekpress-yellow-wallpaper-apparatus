@@ -8,7 +8,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-DEFAULT_PRIVATE_REPO = "nicholaskarlson/nekpress-pd-ingest"
+DEFAULT_PRIVATE_REPO = "nicholaskarlson/nekpress-yellow-wallpaper-ingest"
 ASSETS = ["canonical.txt", "canonical.sha256", "provenance.json"]
 
 def run(cmd: list[str]) -> None:
@@ -32,6 +32,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--tag", required=True, help="Private ingest release tag, e.g. v0.1.0")
     ap.add_argument("--repo", default=DEFAULT_PRIVATE_REPO, help="Private ingest repo owner/name")
+    ap.add_argument("--work", default="yellow_wallpaper", help="Work id basename, e.g. yellow_wallpaper")
     args = ap.parse_args()
 
     root = Path(__file__).resolve().parents[1]
@@ -55,11 +56,12 @@ def main() -> int:
         if actual_sha != expected_sha:
             raise RuntimeError(f"SHA256 mismatch: expected {expected_sha}, got {actual_sha}")
 
-        shutil.copyfile(canon, out_dir / "love_of_life.txt")
+        shutil.copyfile(canon, out_dir / f"{args.work}.txt")
         shutil.copyfile(prov, out_dir / "provenance.json")
 
         meta = {
             "pinned_from": {"repo": args.repo, "tag": args.tag},
+            "work": args.work,
             "canonical_sha256": actual_sha,
         }
         (out_dir / "pin.json").write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")

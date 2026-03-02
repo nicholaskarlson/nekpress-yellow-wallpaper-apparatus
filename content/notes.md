@@ -1,5 +1,4 @@
 # Notes (Draft)
 
-Editor: Nicholas Elliott Karlson
+TODO: keyed notes for passages (used after the story).
 
-TODO: Footnote-style notes keyed to passages.
