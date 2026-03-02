@@ -1,25 +1,21 @@
-# NEKpress — The Yellow Wallpaper Apparatus (Critical Edition)
+# NEKpress — The Yellow Wallpaper Analysis (Public)
 
-Public, MIT-licensed **editorial apparatus** + **reproducible text-only analysis** supporting the
-NEKpress annotated paperback edition of Charlotte Perkins Gilman’s *The Yellow Wallpaper*.
+Public, MIT-licensed **quantitative / text-only analysis** supporting a private KDP paperback edition of
+Charlotte Perkins Gilman’s *The Yellow Wallpaper*.
 
-**License holder / editor:** Nicholas Elliott Karlson
+This repository intentionally focuses on:
 
-This repo pins canonical input text from the private ingestion repo as immutable GitHub Release assets:
+- pinning the **public-domain** canonical story text (from a deterministic private ingest release), and
+- generating reproducible **analysis artifacts** (CSV + SHA receipts).
 
-- `canonical.txt`
-- `canonical.sha256`
-- `provenance.json`
+**Editorial apparatus / essays / notes are private** and live only in the paperback build repository.
 
-Pinned copies live under:
+## License
 
-- `data/canonical/yellow_wallpaper.txt`
-- `data/canonical/provenance.json`
-- `data/canonical/pin.json`
+- Code under `src/` and `tools/` is MIT licensed.
+- The pinned Gilman story text is public domain and included here as a pinned input.
 
-## Quick start
-
-### 1) Pin canonical text from private ingest
+## Canonical pin (from private ingest)
 
 Requires `gh` authenticated (and access to the private ingest repo):
 
@@ -27,18 +23,26 @@ Requires `gh` authenticated (and access to the private ingest repo):
 python tools/update_canonical.py --repo nicholaskarlson/nekpress-yellow-wallpaper-ingest --tag v0.1.0 --work yellow_wallpaper
 ```
 
-### 2) Build analysis outputs (local)
+Pinned copies live under:
+
+- `data/canonical/yellow_wallpaper.txt`
+- `data/canonical/provenance.json`
+- `data/canonical/pin.json`
+
+## Build analysis outputs (local)
 
 ```bash
-python tools/build_analysis.py
+python tools/build_analysis.py --work yellow_wallpaper
+python tools/write_analysis_sha256.py
 ```
 
-Outputs:
+Outputs (generated, not committed):
 
 - `analysis/results/window_metrics.csv`
 - `analysis/results/keyness_last_vs_first.csv`
+- `analysis/results/analysis.sha256`
 
-### 3) Cut an analysis release (CI)
+## Cut an analysis release (CI)
 
 Push a tag like `v0.1.0-ana1` to trigger the release workflow:
 
@@ -46,14 +50,3 @@ Push a tag like `v0.1.0-ana1` to trigger the release workflow:
 git tag v0.1.0-ana1
 git push origin v0.1.0-ana1
 ```
-
-## What’s in `content/`
-
-Story-forward apparatus components intended for the paperback build (commentary is used *after* the story text):
-
-- `intro.md` (draft; no spoilers up front)
-- `notes.md` (draft; keyed notes for later placement)
-- `historical_footnotes.md` (draft)
-- `glossary.md` (draft)
-- `editorial_principles.md` (determinism, pins, receipts)
-- `kdp_originality_bullets.txt` (short bullets for KDP originality disclosures)

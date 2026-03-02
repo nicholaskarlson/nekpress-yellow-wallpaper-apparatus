@@ -1,4 +1,0 @@
-- Public-domain story text pinned from private ingest release.
-- Deterministic pinned/tagged canonical assets + provenance receipt.
-- Original editorial apparatus (notes, essays, reader tools).
-- Reproducible analysis assets pinned from public MIT repo.
