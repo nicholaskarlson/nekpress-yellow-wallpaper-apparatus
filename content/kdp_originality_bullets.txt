@@ -1,0 +1,4 @@
+- NEW: Editor-written introduction and historical context
+- NEW: Footnotes explaining terms, places, and era references
+- NEW: Glossary of key names, terms, and locations
+- NEW: Editorial principles + text normalization notes

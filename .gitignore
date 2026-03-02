@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# local outputs
+outputs/
+
+# packaging/build artifacts (local)
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/

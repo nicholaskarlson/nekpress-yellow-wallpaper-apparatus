@@ -1,0 +1,339 @@
+{
+  "canonical_path": "data/canonical/love_of_life.txt",
+  "total_words": 8298,
+  "windows": 10,
+  "window_size": 830,
+  "lexicons": {
+    "civilization": [
+      "bag",
+      "bags",
+      "biscuit",
+      "biscuits",
+      "blanket",
+      "blankets",
+      "cache",
+      "camp",
+      "camps",
+      "cartridge",
+      "cartridges",
+      "claim",
+      "claims",
+      "coffee",
+      "dollar",
+      "dollars",
+      "fire",
+      "fires",
+      "flour",
+      "gold",
+      "gun",
+      "knife",
+      "knives",
+      "map",
+      "maps",
+      "match",
+      "matches",
+      "money",
+      "outfit",
+      "pack",
+      "packs",
+      "rifle",
+      "store",
+      "stores",
+      "sugar",
+      "tea",
+      "tobacco",
+      "trail",
+      "trails"
+    ],
+    "biology": [
+      "ache",
+      "ached",
+      "aching",
+      "bit",
+      "bite",
+      "bitten",
+      "blood",
+      "bone",
+      "bones",
+      "cold",
+      "crawl",
+      "crawled",
+      "crawling",
+      "flesh",
+      "freeze",
+      "frost",
+      "frostbite",
+      "frozen",
+      "hunger",
+      "hungry",
+      "meat",
+      "nausea",
+      "pain",
+      "rib",
+      "ribs",
+      "snarl",
+      "snarled",
+      "snarling",
+      "starve",
+      "starved",
+      "starving",
+      "stomach",
+      "teeth",
+      "thirst",
+      "thirsty",
+      "tooth",
+      "vomit",
+      "vomited",
+      "vomiting",
+      "weak",
+      "weakened",
+      "weakness",
+      "wolf",
+      "wolves",
+      "wound",
+      "wounds"
+    ]
+  },
+  "top_keyness": [
+    {
+      "token": "scientific",
+      "first": 0,
+      "last": 7,
+      "log_odds": 2.794785296835766
+    },
+    {
+      "token": "wolf",
+      "first": 0,
+      "last": 6,
+      "log_odds": 2.649476946779882
+    },
+    {
+      "token": "food",
+      "first": 0,
+      "last": 4,
+      "log_odds": 2.277351719509743
+    },
+    {
+      "token": "waited",
+      "first": 0,
+      "last": 4,
+      "log_odds": 2.277351719509743
+    },
+    {
+      "token": "strength",
+      "first": 0,
+      "last": 4,
+      "log_odds": 2.277351719509743
+    },
+    {
+      "token": "would",
+      "first": 0,
+      "last": 3,
+      "log_odds": 2.0238443078938264
+    },
+    {
+      "token": "breath",
+      "first": 0,
+      "last": 3,
+      "log_odds": 2.0238443078938264
+    },
+    {
+      "token": "hardtack",
+      "first": 0,
+      "last": 3,
+      "log_odds": 2.0238443078938264
+    },
+    {
+      "token": "whale",
+      "first": 0,
+      "last": 3,
+      "log_odds": 2.0238443078938264
+    },
+    {
+      "token": "could",
+      "first": 0,
+      "last": 3,
+      "log_odds": 2.0238443078938264
+    },
+    {
+      "token": "some",
+      "first": 0,
+      "last": 3,
+      "log_odds": 2.0238443078938264
+    },
+    {
+      "token": "hour",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "closed",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "half",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "alone",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "sailors",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "bedford",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "wheezing",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "forced",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "sane",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "ship",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "throat",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "grinned",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "later",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "feed",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "hear",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "day",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "pressed",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "harsh",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "man's",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "see",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "along",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "after",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "bunk",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "saw",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "feebly",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "closer",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "yet",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "clutched",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    },
+    {
+      "token": "sailor",
+      "first": 0,
+      "last": 2,
+      "log_odds": 1.6851838865920605
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+name: release-analysis
+
+on:
+  push:
+    tags:
+      - "v*-ana*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: "pip"
+
+      - name: Install (dev)
+        run: |
+          python -m pip install -U pip
+          pip install -e ".[dev]"
+
+      - name: Lint + tests
+        run: |
+          ruff check .
+          pytest -q
+
+      - name: Build analysis outputs
+        run: |
+          python tools/build_analysis.py
+          ls -la analysis/results
+
+      - name: Write analysis.sha256
+        run: |
+          cd analysis/results
+          sha256sum window_metrics.csv keyness_last_vs_first.csv > analysis.sha256
+          cat analysis.sha256
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "${{ github.ref_name }}"
+          draft: false
+          prerelease: false
+          files: |
+            analysis/results/window_metrics.csv
+            analysis/results/keyness_last_vs_first.csv
+            analysis/results/analysis.sha256
