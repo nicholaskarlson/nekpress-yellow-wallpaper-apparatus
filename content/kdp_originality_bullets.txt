@@ -1,4 +1,4 @@
-- Public-domain source text pinned from private ingest release.
-- Deterministic pinned/tagged canonical assets.
-- Editorial apparatus is original work (notes, essays, reader tools).
-- Analysis assets are reproducible from pinned canonical input.
+- Public-domain story text pinned from private ingest release.
+- Deterministic pinned/tagged canonical assets + provenance receipt.
+- Original editorial apparatus (notes, essays, reader tools).
+- Reproducible analysis assets pinned from public MIT repo.
