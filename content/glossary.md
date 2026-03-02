@@ -1,5 +1,4 @@
 # Glossary (Draft)
 
-Editor: Nicholas Elliott Karlson
+TODO: Term — definition (same-line format).
 
-TODO: Terms, places, and historical references.

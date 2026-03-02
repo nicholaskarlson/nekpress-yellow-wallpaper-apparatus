@@ -1,14 +1,14 @@
 {
-  "work_id": "love_of_life",
-  "built_utc": "2026-02-27T00:27:03.759091+00:00",
+  "work_id": "yellow_wallpaper",
+  "built_utc": "2026-03-02T04:20:09.301088+00:00",
   "inputs": {
     "source_kind": "gutenberg",
-    "ebook_id": 710,
-    "url": "https://www.gutenberg.org/cache/epub/710/pg710.txt",
-    "raw_sha256": "8f2c434bccb6264205d4268935752c6fb44179a210fa82fbc110a6cd11e131c8"
+    "ebook_id": 1952,
+    "url": "https://www.gutenberg.org/cache/epub/1952/pg1952.txt",
+    "raw_sha256": "0ab8a43076e7befde0c0986c3e69958e3967f640a9e46b98c8865c62c853c4c8"
   },
   "outputs": {
-    "canonical_sha256": "38746296db357440e2e0200bb5de49c8f0210c8dce3cfc9bfbd20b647d7fa6bc"
+    "canonical_sha256": "a9bf7378cc740ead2875f18164b95a1c243b7a62d29b2ba91480267fd99d31c9"
   },
   "notes": "Canonical output is cleaned and contains no Gutenberg boilerplate markers."
 }

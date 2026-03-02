@@ -1,4 +1,4 @@
-- NEW: Editor-written introduction and historical context
-- NEW: Footnotes explaining terms, places, and era references
-- NEW: Glossary of key names, terms, and locations
-- NEW: Editorial principles + text normalization notes
+- Public-domain source text pinned from private ingest release.
+- Deterministic pinned/tagged canonical assets.
+- Editorial apparatus is original work (notes, essays, reader tools).
+- Analysis assets are reproducible from pinned canonical input.

@@ -1,5 +1,4 @@
 # Editorial Principles (Draft)
 
-Editor: Nicholas Elliott Karlson
+TODO: determinism, pins, receipts, and how this apparatus repo stays reproducible.
 
-TODO: Explain normalization rules, what was preserved, and how notes are keyed.
