@@ -1,4 +1,3 @@
-# Notes (Draft)
+## Notes
 
-TODO: keyed notes for passages (used after the story).
-
+These general notes are brief and non-exhaustive. For keyed notes tied to turning points, see “Notes on Key Passages.”

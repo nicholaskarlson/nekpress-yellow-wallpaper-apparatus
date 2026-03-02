@@ -1,4 +1,3 @@
-# Historical Footnotes (Draft)
+## Historical note (brief)
 
-TODO: short factual footnotes (medicine, domestic life, publication context).
-
+The story engages domestic medicine, authority, and the politics of “health” inside the household. The apparatus essays provide more context for rereading the text in that frame.
